@@ -1,0 +1,52 @@
+import java.util.Scanner;
+public class Act3 {
+public static void main(String[] args) {
+Scanner zy = new Scanner(System.in);
+double monthlyPayment;
+double Payment;
+String name;
+System.out.println("Customer Name:");
+name = zy.nextLine();
+String pid;
+System.out.println("Product ID:");
+pid = zy.nextLine();
+String proDes;
+System.out.println("Product Description:");
+proDes = zy.nextLine();
+int amount;
+System.out.println("Amount:");
+amount = zy.nextInt();
+zy.nextLine();
+System.out.println("***************************");
+int mop;
+System.out.println("Enter Mode of Payment:");
+mop = zy.nextInt();
+System.out.println("***************************");
+switch(mop){
+case 1:
+ System.out.println("Cash payment");
+ System.out.println("Customer Name: " + name);
+ System.out.println("Total:"+ amount);
+ break;
+ case 2:
+ System.out.println("6 months Installment (5% interest)");
+ System.out.println("Customer Name: " + name);
+ monthlyPayment = (amount + (amount* 0.05));
+ System.out.println("Total:" + monthlyPayment);
+ System.out.println("Monthly Dues:"+ monthlyPayment / 6);
+ //System.out.println("Monthly Dues:" , monthlyPayment/6);
+ break;
+ case 3:
+ System.out.println("12 months Installment (10% interest)");
+ System.out.println("Customer Name: " + name);
+ Payment = (amount +(amount* 0.10));
+ System.out.println("Total:"+ Payment);
+ System.out.println("Monthly Dues:"+ Payment / 12);
+ //System.out.println("Monthly Dues:", Payment/12);
+ break;
+ default:
+ System.out.println("INVALID!");
+ break;
+}
+}
+}
