@@ -1,48 +1,48 @@
 import java.util.Scanner;
 
-public class Activity1 {
+public class StudentInfoInput {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         String name;
         System.out.println("Name: ");
-        name = in.nextLine();
+        name = scanner.nextLine();
 
         String address;
         System.out.println("Address: ");
-        address = in.nextLine();
+        address = scanner.nextLine();
 
         String birthday;
         System.out.println("Birthday: ");
-        birthday = in.nextLine();
+        birthday = scanner.nextLine();
 
-        int myAge;
+        int age;
         System.out.println("Age: ");
-        myAge = in.nextInt();
-        in.nextLine();
+        age = scanner.nextInt();
+        scanner.nextLine();
 
         String contactNumber;
         System.out.println("Contact No.: ");
-        contactNumber = in.nextLine();
+        contactNumber = scanner.nextLine();
 
         String emailAddress;
         System.out.println("Email Address: ");
-        emailAddress = in.nextLine();
+        emailAddress = scanner.nextLine();
 
         String course;
         System.out.println("Course: ");
-        course = in.nextLine();
+        course = scanner.nextLine();
 
         String section;
         System.out.println("Section: ");
-        section = in.nextLine();
+        section = scanner.nextLine();
 
-        String school;
+        String schoolName;
         System.out.println("Name of School: ");
-        school = in.nextLine();
+        schoolName = scanner.nextLine();
 
         String schoolAddress;
         System.out.println("School Address: ");
-        schoolAddress = in.nextLine();
+        schoolAddress = scanner.nextLine();
     }
 }
